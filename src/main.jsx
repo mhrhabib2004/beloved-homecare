@@ -12,6 +12,7 @@ import PrivateCare from './Component/NavigationTab/PrivateCare';
 import Recruitment from './Component/Recruitment/Recruitment';
 import BelovedHomecareBranches from './Component/BelovedHomecareBranches/BelovedHomecareBranches';
 import Aboutus from './Component/AboutUs/Aboutus';
+import About from './Component/AboutUs/About';
 
 
 const router = createBrowserRouter([
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path:"/aboutus",
         element:<Aboutus/>
+      },
+      {
+        path:"/about",
+        element:<About/>
       }
     ]
   },

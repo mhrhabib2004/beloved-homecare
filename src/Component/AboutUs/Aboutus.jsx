@@ -1,73 +1,69 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import WhatWeDo from "./WhatWeDo";
 import About from "./About";
-import OurTeam from "./OurTeam";
-import OurValues from "./OurValues";
-import PayingForHomeCare from "./PayingForHomeCare";
-import CareMattersBlog from "./CareMattersBlog";
-import UsefulInformation from "./UsefulInformation";
 
-const Aboutus = () => {
+const AboutUs = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuItems = [
-    { name: "About", path: "/about" },
-    { name: "What We Do", path: "/what-we-do" },
-    { name: "Our Team", path: "/our-team" },
-    { name: "Our Values", path: "/our-values" },
-    { name: "Paying for Home Care", path: "/paying-for-home-care" },
-    { name: "Care Matters Blog", path: "/care-matters-blog" },
-    { name: "Useful Information", path: "/useful-information" },
-  ];
-
   return (
-    <div className="bg-gray-100 min-h-screen flex">
-      {/* Sidebar for large screens */}
-      <aside className="hidden lg:flex flex-col bg-blue-700 text-white w-64 p-6 space-y-4">
-        <h2 className="text-2xl font-bold">Navigation</h2>
-        {menuItems.map((item, index) => (
-          <Link
-            key={index}
-            to={item.path} // Route path
-            className="bg-blue-600 hover:bg-blue-500 text-white text-lg py-3 px-4 rounded-lg transition"
+    <div className="min-h-screen bg-gray-50">
+      {/* Header */}
+      <header className="bg-gradient-to-r from-purple-600 to-indigo-600 w-full text-center text-white p-12 rounded-b-3xl shadow-xl">
+        <h1 className="text-5xl font-bold">Beloved Homecare</h1>
+        <p className="mt-2 text-xl">Personal Care Services Tailored to You</p>
+      </header>
+
+      <div className="flex lg:p-5  flex-col lg:flex-row">
+
+        {/* Mobile Menu Button */}
+        <div className="sm:hidden w-full">
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="bg-gradient-to-r from-purple-700 to-indigo-700 text-white py-3 px-8 m-4 rounded-full flex items-center justify-center hover:from-purple-800 hover:to-indigo-800 transition duration-300 shadow-lg"
           >
-            {item.name}
-          </Link>
-        ))}
-      </aside>
+            <span className="text-xl font-semibold">{isMenuOpen ? "-" : "+"}</span>
+            <span className="ml-2 text-sm">Menu</span>
+          </button>
+        </div>
 
-      {/* Collapsible Menu for small screens */}
-      <div className="lg:hidden w-full">
-        <button
-          className="bg-blue-700 text-white py-2 px-4 m-4 rounded-lg flex items-center"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          <span className="text-lg">{isMenuOpen ? "-" : "+"}</span>
-          <span className="ml-2 text-sm">Menu</span>
-        </button>
-
+        {/* Sidebar for small screens */}
         {isMenuOpen && (
-          <div className="bg-gray-200 text-gray-800 p-4 space-y-2 rounded-lg">
-            {menuItems.map((item, index) => (
-              <Link
-                key={index}
-                to={item.path} // Route path
-                className="w-full text-left text-sm py-2 px-3 hover:bg-gray-300 rounded-lg transition"
-              >
-                {item.name}
-              </Link>
-            ))}
+          <div className="sm:hidden  w-full bg-purple-50 text-gray-800 p-6 space-y-4 rounded-lg shadow-md">
+            <ul className="list-none">
+              <li className="mb-4">
+                <a href="#" className="text-purple-700 hover:text-purple-900 text-xl font-semibold">Home</a>
+              </li>
+              <li className="mb-4">
+                <a href="#" className="text-purple-700 hover:text-purple-900 text-xl font-semibold">About</a>
+              </li>
+              <li className="mb-4">
+                <a href="#" className="text-purple-700 hover:text-purple-900 text-xl font-semibold">Contact</a>
+              </li>
+            </ul>
           </div>
         )}
-      </div>
 
-      {/* Main Content Area */}
-      <main className="flex-grow p-6">
-        <WhatWeDo />
-      </main>
+        {/* Sidebar for large screens */}
+        <div className="hidden lg:block lg:w-1/5 bg-gradient-to-r from-purple-700 to-indigo-700 sticky top-0 p-6 space-y-6 rounded-lg shadow-md">
+          <ul className="list-none">
+            <li className="mb-4">
+              <a href="#" className="text-white hover:text-gray-300 text-xl font-semibold">Home</a>
+            </li>
+            <li className="mb-4">
+              <a href="#" className="text-white hover:text-gray-300 text-xl font-semibold">About</a>
+            </li>
+            <li className="mb-4">
+              <a href="#" className="text-white hover:text-gray-300 text-xl font-semibold">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Main Content */}
+        <div className="w-full lg:w-3/4 p-8 bg-white rounded-lg shadow-lg">
+          <About />
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Aboutus;
+export default AboutUs;
