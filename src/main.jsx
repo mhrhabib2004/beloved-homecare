@@ -8,6 +8,7 @@ import './index.css'
 import Root from './Root/Root';
 import Home from './Home/Home';
 import Findus from './Component/FindUs/Findus';
+import PrivateCare from './Component/NavigationTab/PrivateCare';
 
 
 const router = createBrowserRouter([
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path:"/findus",
         element:<Findus/>
+      },
+      {
+        path:"/privatecare",
+        element:<PrivateCare/>
       }
     ]
   },
