@@ -15,11 +15,11 @@ const WhatWeDo = () => {
             Our Adult Support Services
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Home care services we provide:
+            Home care services we provide :
           </p>
           <ul className="list-disc list-inside text-gray-800 space-y-2">
             <li>
-              <strong>Personal Care:</strong> Washing, Dressing, Medication
+              <strong>Personal Care:</strong> Washing,Dressing, Medication
             </li>
             <li>
               <strong>Companionship:</strong> Long sits with clients to keep
@@ -27,7 +27,7 @@ const WhatWeDo = () => {
             </li>
             <li>
               <strong>Activities:</strong> Shopping, Visiting friends and
-              family, Dog walking
+              family
             </li>
             <li>
               <strong>Live-In Care:</strong> 24/7 Packages
