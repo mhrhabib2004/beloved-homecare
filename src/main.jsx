@@ -13,6 +13,7 @@ import Recruitment from './Component/Recruitment/Recruitment';
 import BelovedHomecareBranches from './Component/BelovedHomecareBranches/BelovedHomecareBranches';
 import Aboutus from './Component/AboutUs/Aboutus';
 import About from './Component/AboutUs/About';
+import Feedback from './Component/Feedback/Feedback';
 
 
 const router = createBrowserRouter([
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
       {
         path:"/about",
         element:<About/>
+      },
+      {
+        path:"/feedback",
+        element:<Feedback/>
       }
     ]
   },

@@ -24,19 +24,29 @@ const AboutUs = () => {
             <span className="ml-2 text-sm">Menu</span>
           </button>
         </div>
+       
 
         {/* Sidebar for small screens */}
         {isMenuOpen && (
           <div className="sm:hidden  w-full bg-purple-50 text-gray-800 p-6 space-y-4 rounded-lg shadow-md">
             <ul className="list-none">
               <li className="mb-4">
-                <a href="#" className="text-purple-700 hover:text-purple-900 text-xl font-semibold">Home</a>
+                <a href="/about" className="text-purple-700 hover:text-purple-900 text-xl font-semibold">About</a>
               </li>
               <li className="mb-4">
-                <a href="#" className="text-purple-700 hover:text-purple-900 text-xl font-semibold">About</a>
+                <a href="#" className="text-purple-700 hover:text-purple-900 text-xl font-semibold">What We Do</a>
               </li>
               <li className="mb-4">
-                <a href="#" className="text-purple-700 hover:text-purple-900 text-xl font-semibold">Contact</a>
+                <a href="#" className="text-purple-700 hover:text-purple-900 text-xl font-semibold">Our Team</a>
+              </li>
+              <li className="mb-4">
+                <a href="#" className="text-purple-700 hover:text-purple-900 text-xl font-semibold">Paying for Home Care</a>
+              </li>
+              <li className="mb-4">
+                <a href="#" className="text-purple-700 hover:text-purple-900 text-xl font-semibold">Care Matters Blog</a>
+              </li>
+              <li className="mb-4">
+                <a href="#" className="text-purple-700 hover:text-purple-900 text-xl font-semibold">Useful Information</a>
               </li>
             </ul>
           </div>
@@ -46,14 +56,24 @@ const AboutUs = () => {
         <div className="hidden lg:block lg:w-1/5 bg-gradient-to-r from-purple-700 to-indigo-700 sticky top-0 p-6 space-y-6 rounded-lg shadow-md">
           <ul className="list-none">
             <li className="mb-4">
-              <a href="#" className="text-white hover:text-gray-300 text-xl font-semibold">Home</a>
+              <a href="" className="text-white hover:text-gray-300 text-xl font-semibold">About</a>
             </li>
             <li className="mb-4">
-              <a href="#" className="text-white hover:text-gray-300 text-xl font-semibold">About</a>
+              <a href="#" className="text-white hover:text-gray-300 text-xl font-semibold">What We Do</a>
             </li>
             <li className="mb-4">
-              <a href="#" className="text-white hover:text-gray-300 text-xl font-semibold">Contact</a>
+              <a href="#" className="text-white hover:text-gray-300 text-xl font-semibold">Our Team</a>
             </li>
+            <li className="mb-4">
+              <a href="#" className="text-white hover:text-gray-300 text-xl font-semibold">Paying for Home Care</a>
+            </li>
+            <li className="mb-4">
+              <a href="#" className="text-white hover:text-gray-300 text-xl font-semibold">Care Matters Blog</a>
+            </li>
+            <li className="mb-4">
+              <a href="#" className="text-white hover:text-gray-300 text-xl font-semibold">Useful Information</a>
+            </li>
+            
           </ul>
         </div>
 
