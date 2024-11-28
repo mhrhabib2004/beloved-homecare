@@ -34,7 +34,7 @@ const AboutUs = () => {
                 <a href="/about" className="text-purple-700 hover:text-purple-900 text-xl font-semibold">About</a>
               </li>
               <li className="mb-4">
-                <a href="#" className="text-purple-700 hover:text-purple-900 text-xl font-semibold">What We Do</a>
+                <a href="/whatwedo" className="text-purple-700 hover:text-purple-900 text-xl font-semibold">What We Do</a>
               </li>
               <li className="mb-4">
                 <a href="#" className="text-purple-700 hover:text-purple-900 text-xl font-semibold">Our Team</a>
@@ -59,7 +59,7 @@ const AboutUs = () => {
               <a href="" className="text-white hover:text-gray-300 text-xl font-semibold">About</a>
             </li>
             <li className="mb-4">
-              <a href="#" className="text-white hover:text-gray-300 text-xl font-semibold">What We Do</a>
+              <a href="/whatwedo" className="text-white hover:text-gray-300 text-xl font-semibold">What We Do</a>
             </li>
             <li className="mb-4">
               <a href="#" className="text-white hover:text-gray-300 text-xl font-semibold">Our Team</a>

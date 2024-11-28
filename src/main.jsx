@@ -14,6 +14,7 @@ import BelovedHomecareBranches from './Component/BelovedHomecareBranches/Beloved
 import Aboutus from './Component/AboutUs/Aboutus';
 import About from './Component/AboutUs/About';
 import Feedback from './Component/Feedback/Feedback';
+import WhatWeDo from './Component/AboutUs/WhatWeDo';
 
 
 const router = createBrowserRouter([
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
       {
         path:"/feedback",
         element:<Feedback/>
+      },
+      {
+        path:"/whatwedo",
+        element:<WhatWeDo/>
       }
     ]
   },
