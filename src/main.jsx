@@ -15,6 +15,9 @@ import Aboutus from './Component/AboutUs/Aboutus';
 import About from './Component/AboutUs/About';
 import Feedback from './Component/Feedback/Feedback';
 import WhatWeDo from './Component/AboutUs/WhatWeDo';
+import PayingForHomeCare from './Component/AboutUs/PayingForHomeCare';
+import CareMattersBlog from './Component/AboutUs/CareMattersBlog';
+import UsefulInformation from './Component/AboutUs/UsefulInformation';
 
 
 const router = createBrowserRouter([
@@ -57,6 +60,18 @@ const router = createBrowserRouter([
       {
         path:"/whatwedo",
         element:<WhatWeDo/>
+      },
+      {
+        path:"/PayingforHomeCare",
+        element:<PayingForHomeCare />
+      },
+      {
+        path:"/CareMattersBlog",
+        element:<CareMattersBlog />
+      },
+      {
+        path:"/UsefulInformation",
+        element:<UsefulInformation />
       }
     ]
   },
